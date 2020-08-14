@@ -1,0 +1,18 @@
+#include <Wire.h>
+#include <LiquidCrystal.h>
+
+LiquidCrystal LCD(9, 8, 7,6, 5, 4 );
+void setup ()
+{
+  LCD.begin(16, 2);
+  
+}
+void loop ()
+{
+    LCD.setCursor(2,0);
+    LCD.print("HELLO");
+    LCD.setCursor(2,1);
+    LCD.print("lai la LOC day");
+    delay(1000);
+    LCD.clear();
+}
